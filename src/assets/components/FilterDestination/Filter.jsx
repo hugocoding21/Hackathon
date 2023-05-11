@@ -20,8 +20,8 @@ const Filter = () => {
   return (
     <div>
       <div className="filtercontainer">
-        <h2>Choose your destination</h2>
-        <input type="search" name="" id="" onChange={handleFilterChange} />
+        <p>Choose your destination</p>
+        <input type="search" onChange={handleFilterChange} />
       </div>
 
       <div className="containerdestination">
