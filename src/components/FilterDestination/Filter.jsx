@@ -15,7 +15,7 @@ const Filter = () => {
   const showDestination = (destination) => {
     setChosenCity(destination.city); // set the chosenCity state to the city chosen by the user
     navigate("/listing", { state: { chosenCity: destination.city } }); // pass the chosen city as a state to the listing component
-    console.log(chosenCity);
+    
   };
 
   return (
@@ -39,7 +39,7 @@ const Filter = () => {
               onClick={() => showDestination(destination)}
             >
               {/* Added an image tag to display the city image */}
-              <img src={destination.image} alt={destination.city} />
+              <img src="" alt={destination.city} />
               
             </div>
           );

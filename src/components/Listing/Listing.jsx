@@ -4,13 +4,15 @@ import "./Listing.scss";
 //import house from "./house.jpg";
 import { useLocation } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
+import { useNavigate } from "react-router-dom";
+
 function Listing() {
   const [selectedHouse, setSelectedHouse] = useState(null);
   const [showModal, setShowModal] = useState(false);
   const location = useLocation();
   const chosenCity = location?.state?.chosenCity;
   const filteredHouses = houses.filter(data => chosenCity === data.city);
-
+  const navigate = useNavigate();
   const openModal = (house) => {
     setSelectedHouse(house);
     setShowModal(true);
@@ -21,7 +23,13 @@ function Listing() {
     setShowModal(false);
   };
 
+  const showConfirmationForm = () => {
+    navigate("/Form", { state: {chosenCity:chosenCity } }); 
+  }
 
+  const contactHost = () => {
+    navigate("/contact"); 
+  }
   
   return (
     <>
@@ -31,7 +39,7 @@ function Listing() {
       {filteredHouses.length === 0 && <p>No houses found in {chosenCity}</p>}
     {filteredHouses.map((data, key) => (
       <div key={key} className="house" onClick={() => openModal(data)}>
-        <img src={data.image} alt="" />
+         <img src={data.image} alt="" />
         <p className="paragraph">{data.description}</p>
       </div>
     ))}
@@ -49,8 +57,8 @@ function Listing() {
               <img src={} /> */}
             </div>
             <div className="buttons">
-              <button className="btn">Instant Book</button>
-              <button className="btn">Contact host</button>
+              <button className="btn" onClick={showConfirmationForm}>Instant Book</button>
+              <button className="btn" onClick={contactHost}>Contact host</button>
             </div>
             <button onClick={closeModal} aria-label="close" className="x">
               ❌

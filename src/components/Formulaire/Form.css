@@ -8,10 +8,12 @@
 
 
 .all-form {
-    background: lightgray;
+    /* background: lightgray; */
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: relative;
+    top: 5em;
 
 }
 
