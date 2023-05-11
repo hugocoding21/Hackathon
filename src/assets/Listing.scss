@@ -1,0 +1,114 @@
+
+.Listings{
+    position: relative;
+    flex-wrap: nowrap;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 80%;
+    height: 80vh;
+    
+}
+
+.house {
+   
+    background-color: "#FFD393";
+    border-radius: 5px;
+   margin: 10px;
+    width: 100%;
+    height: 80%;
+    cursor: pointer;
+    text-align: justify;
+    box-shadow: 0 10px 20px -10px rgb(var(--vs-primary) / 50%);
+	&:hover {
+	box-shadow: 0 20px 20px -10px rgb(var(--vs-primary) / 50%);
+	transform: translateY(-5px);
+	}
+
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+}
+
+
+img {
+    width: 200px; 
+    height: 150px;
+}
+
+.modal{
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+font-family: 'Kanit', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+        position: absolute;
+        top: 15%;
+        left: 5%;
+        padding: 1rem 3rem;
+        background: rgb(237, 224, 216);
+        width: 80em;
+        height: 75vh;
+        padding-top: 2rem;
+        border-radius: 20px;
+        border: 0;
+        box-shadow: 0 5px 30px 0 rgb(0 0 0 / 10%);
+        animation: fadeIn 1s ease both;
+        &::backdrop {
+            animation: fadeIn 1s ease both;
+            background: rgb(255 255 255 / 40%);
+           z-index: 2;
+            backdrop-filter: blur(20px);
+}
+
+}
+
+.x {
+    filter: grayscale(1);
+    border: none;
+    background: none;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    transition: ease filter, transform 0.3s;
+    cursor: pointer;
+    transform-origin: center;
+    &:hover {
+        filter: grayscale(0);
+        transform: scale(1.1);
+    }
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+    align-items: baseline;
+    position: absolute;
+    top: 80%;
+    left: 33%;
+ 
+
+}
+
+.btn{
+    background-color: #F54F29;
+    margin: 10px;
+}
+
+.images_slide{
+    position: relative;
+    float: right;
+    width: 300px;
+    height: 400px;
+    /* overflow: hidden; */
+    margin: 0 auto;
+    overflow-y: scroll;
+}
+
