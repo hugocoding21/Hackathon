@@ -1,6 +1,5 @@
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
-
 import Filter from "./components/FilterDestination/Filter";
 import React from "react";
 import About from "./components/AboutUS/About";
