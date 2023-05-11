@@ -134,6 +134,87 @@ export const houses = [
           "https://example.com/image24.jpg"
         ]
       },
+      {
+        "city": "Cape Town",
+        "description": "Beautiful villa with stunning views of the ocean and mountains",
+        "location": {
+          "latitude": -33.9249,
+          "longitude": 18.4241
+        },
+        "image": "https://www.example.com/images/cape-town-villa.jpg"
+      },
+      {
+        "city": "Marrakech",
+        "description": "Traditional Moroccan house with a courtyard and pool",
+        "location": {
+          "latitude": 31.6295,
+          "longitude": -7.9811
+        },
+        "image": "https://www.example.com/images/marrakech-house.jpg"
+      },
+      {
+        "city": "Nairobi",
+        "description": "Modern apartment with a balcony overlooking the city",
+        "location": {
+          "latitude": -1.2921,
+          "longitude": 36.8219
+        },
+        "image": "https://www.example.com/images/nairobi-apartment.jpg"
+      },
+      {
+        "city": "Johannesburg",
+        "description": "Luxury penthouse with a private rooftop pool",
+        "location": {
+          "latitude": -26.2041,
+          "longitude": 28.0473
+        },
+        "image": "https://www.example.com/images/johannesburg-penthouse.jpg"
+      },
+      {
+        "city": "Accra",
+        "description": "Spacious house with a large garden and outdoor seating area",
+        "location": {
+          "latitude": 5.6037,
+          "longitude": -0.187
+        },
+        "image": "https://www.example.com/images/accra-house.jpg"
+      },
+      {
+        "city": "Lagos",
+        "description": "Charming bungalow with a bright and colorful interior",
+        "location": {
+          "latitude": 6.5244,
+          "longitude": 3.3792
+        },
+        "image": "https://www.example.com/images/lagos-bungalow.jpg"
+      },
+      {
+        "city": "Dar es Salaam",
+        "description": "Comfortable apartment in a gated community with security",
+        "location": {
+          "latitude": -6.7924,
+          "longitude": 39.2083
+        },
+        "image": "https://www.example.com/images/dar-es-salaam-apartment.jpg"
+      },
+      {
+        "city": "Kigali",
+        "description": "Cozy cottage in a quiet and peaceful neighborhood",
+        "location": {
+          "latitude": -1.9536,
+          "longitude": 30.0605
+        },
+        "image": "https://www.example.com/images/kigali-cottage.jpg"
+      },
+      {
+        "city": "Tunis",
+        "description": "Historic house with traditional Tunisian architecture",
+        "location": {
+          "latitude": 36.8065,
+          "longitude": 10.1815
+        },
+        "image": "https://www.example.com/images/tunis-house.jpg"
+      },
     ]
 
     

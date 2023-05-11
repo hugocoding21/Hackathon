@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { houses } from "./Listings";
 import "./Listing.scss";
 //import house from "./house.jpg";
 import { useLocation } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 function Listing() {
   const [selectedHouse, setSelectedHouse] = useState(null);
@@ -30,6 +31,20 @@ function Listing() {
   const contactHost = () => {
     navigate("/contact"); 
   }
+  //show random profiles
+  const [user, setUser] = useState();
+  const getUser = () => {
+    
+    axios
+      .get("https://randomuser.me/api?nat=en")
+      .then((response) => response.data)
+      .then((data) => {
+        setUser(data.results[0]);
+      });
+  };
+  useEffect(() => {
+    getUser()
+  }, []);
   
   return (
     <>
@@ -56,6 +71,7 @@ function Listing() {
               <img src={} />
               <img src={} /> */}
             </div>
+            <div className="user"><img src={user.picture.large} alt="user"/></div>
             <div className="buttons">
               <button className="btn" onClick={showConfirmationForm}>Instant Book</button>
               <button className="btn" onClick={contactHost}>Contact host</button>
