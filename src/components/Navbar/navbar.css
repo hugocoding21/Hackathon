@@ -1,0 +1,39 @@
+.navContainer {
+    position: fixed;
+    top: 0;
+    height: 70px;
+    width: 100%;
+    background: #FFD393;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navContainer h2{
+    margin-left: 2em;
+    color: #F54F29;
+}
+
+
+.buttonList {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    z-index: 200;
+    color: #F54F29;
+    
+}
+ 
+.linkBtn, .linkBtn:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navBtn {
+    cursor: pointer;
+    margin-right: 5em;
+    text-decoration: none;
+
+}
