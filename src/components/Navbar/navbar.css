@@ -3,7 +3,7 @@
     top: 0;
     height: 70px;
     width: 100%;
-    background: #FFD393;
+    background: yellow;
     z-index: 100;
     display: flex;
     justify-content: space-between;
