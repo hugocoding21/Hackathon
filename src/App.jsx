@@ -5,7 +5,7 @@ import Filter from "./assets/components/FilterDestination/Filter";
 import React from "react";
 import About from "./components/AboutUS/About";
 import Navbar from "./components/Navbar/Navbar";
-
+import User from "./components/user/User";
 
 function App() {
   return (
@@ -16,9 +16,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Filter />}></Route>
         <Route path="/about" element={<About />}></Route>
+        <Route path="/user" element={<User />}></Route>
       </Routes>
     </div>
-
   );
 }
 
