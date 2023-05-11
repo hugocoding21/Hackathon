@@ -1,27 +1,29 @@
 .navContainer {
-  position: fixed;
-  top: 0;
-  height: 10vh;
-  width: 100%;
-  background: #ffd393;
-  z-index: 100;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    position: fixed;
+    top: 0;
+    height: 70px;
+    width: 100%;
+    background: #dfcaac;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.navContainer h2 {
-  margin-left: 2em;
-  color: #f54f29;
+.navContainer h2{
+    margin-left: 2em;
+    color: #fff;
 }
 
 .buttonList {
-  height: 70px;
-  display: flex;
-  align-items: center;
-  list-style-type: none;
-  z-index: 200;
-  color: #f54f29;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    z-index: 200;
+    color: #fff;
+    font-weight: 700;
+    
 }
 
 .linkBtn,
