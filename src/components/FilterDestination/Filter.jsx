@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Filter.css";
-import { houses } from "../Listings";
+import {houses} from "../Listing/Listings" 
 import { useNavigate } from "react-router-dom";
 
 const Filter = () => {
@@ -19,11 +19,11 @@ const Filter = () => {
   };
 
   return (
-    <div>
+   
       <div className="filtercontainer">
-        <p>Choose your destination</p>
-        <input type="search" onChange={handleFilterChange} />
-      </div>
+        <p className="">Choose your destination</p>
+        <input type="search" onChange={handleFilterChange} className="searchBar"/>
+      
 
       <div className="containerdestination">
         {houses.map((destination, index) => {
@@ -45,9 +45,9 @@ const Filter = () => {
           );
         })}
       </div>
-    </div>
+      </div>
+    
   );
 };
 
 export default Filter;
-
