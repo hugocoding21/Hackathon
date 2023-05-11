@@ -3,7 +3,7 @@
     top: 0;
     height: 70px;
     width: 100%;
-    background: #FFD393;
+    background: #dfcaac;
     z-index: 100;
     display: flex;
     justify-content: space-between;
@@ -12,7 +12,7 @@
 
 .navContainer h2{
     margin-left: 2em;
-    color: #F54F29;
+    color: #fff;
 }
 
 
@@ -22,7 +22,8 @@
     align-items: center;
     list-style-type: none;
     z-index: 200;
-    color: #F54F29;
+    color: #fff;
+    font-weight: 700;
     
 }
  

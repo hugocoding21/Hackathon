@@ -1,26 +1,55 @@
+.page{
+    height: 100vh;
+    background-image: url('./../../assets/pexels-jaime-reimer-2662116.jpg');
+    background-position: center;
+    background-size: 100%;
+}
+
 
 .globalContainer {
-    width: 100%;
+    width: 70em;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    background-color: #9C9B7A;
-    position: relative;
+    background-color: #9c9b7aac;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2em;
+    transition: 2s;
     
+}
+
+.globalContainer:hover {
+    background-color: #9c9b7a;
+
 }
 
 .textContainer {
-    border: 1px solid blueviolet;
-    width: 50em;
     text-align: center;
+    margin-right: 3em;
+    margin-left: 3em;
+    margin-bottom: 3em;
+    margin-top: 5em;
+}
+
+.textContainer p {
+    text-align: justify;
 }
 
 .teamContainer {
-    border: 1px solid yellow;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-around;
     
+}
+.titleTeam {
+    margin-bottom: 1em;
+}
+
+.developer {
+    margin-right: 2em;
+    margin-bottom: 1em;
 }
