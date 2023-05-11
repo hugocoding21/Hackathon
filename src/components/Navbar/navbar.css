@@ -3,7 +3,7 @@
     top: 0;
     height: 70px;
     width: 100%;
-    background: #FFD393;
+    background: #dfcaac;
     z-index: 100;
     display: flex;
     justify-content: space-between;
@@ -12,9 +12,8 @@
 
 .navContainer h2{
     margin-left: 2em;
-    color: #F54F29;
+    color: #fff;
 }
-
 
 .buttonList {
     height: 70px;
@@ -22,18 +21,19 @@
     align-items: center;
     list-style-type: none;
     z-index: 200;
-    color: #F54F29;
+    color: #fff;
+    font-weight: 700;
     
 }
- 
-.linkBtn, .linkBtn:hover {
-    text-decoration: none;
-    color: inherit;
+
+.linkBtn,
+.linkBtn:hover {
+  text-decoration: none;
+  color: inherit;
 }
 
 .navBtn {
-    cursor: pointer;
-    margin-right: 5em;
-    text-decoration: none;
-
+  cursor: pointer;
+  margin-right: 5em;
+  text-decoration: none;
 }
