@@ -1,6 +1,6 @@
-.page{
+.pageAboutUs{
     height: 100vh;
-    background-image: url('./../../assets/pexels-jaime-reimer-2662116.jpg');
+    background-image: url('./../../assets/img/pexels-jaime-reimer-2662116.jpg');
     background-position: center;
     background-size: 100%;
 }
@@ -37,6 +37,7 @@
 
 .textContainer p {
     text-align: justify;
+    font-size: 1rem;
 }
 
 .teamContainer {

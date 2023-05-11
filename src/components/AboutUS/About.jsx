@@ -7,7 +7,7 @@ const About = () => {
         <>
         <Navbar />
 
-        <div className='page'>
+        <div className='pageAboutUs'>
             
             <div className='globalContainer'>
                 <div className='textContainer'>
