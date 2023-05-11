@@ -1,0 +1,72 @@
+.filtercontainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5em;
+  margin-bottom: 7vh;
+}
+
+input {
+  all: unset;
+  width: 30vw;
+  height: 5vh;
+  margin: auto;
+  border-radius: 30px;
+  color: black;
+  font-size: 1.3rem;
+  font-weight: 500;
+  border: 2px solid black;
+  background-color: rgba(128, 128, 128, 0.418);
+  padding-left: 1rem;
+}
+
+/* article destination */
+.containerdestination {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 90vw;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.card {
+  border-radius: 25px;
+  height: 25vh;
+  width: 25vw;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  color: black;
+  font-size: 3em;
+  font-weight: 700;
+  border: 2px solid black;
+}
+
+.hidden {
+  display: none;
+}
+.paris {
+  background-image: url(../img/paris.jpg);
+  background-size: cover;
+}
+.marseille {
+  background-image: url(../img/marseille2.jpg);
+  background-size: cover;
+}
+.nice {
+  background-image: url(../img/nice.jpg);
+  background-size: cover;
+}
+.montpellier {
+  background-image: url(../img/montpellier.jpeg);
+  background-size: cover;
+}
+.lyon {
+  background-image: url(../img/lyon.jpg);
+  background-size: cover;
+}
+.saint-tropez {
+  background-image: url(../img/saint-tropez.webp);
+  background-size: cover;
+}
