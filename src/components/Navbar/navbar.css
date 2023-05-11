@@ -15,7 +15,6 @@
     color: #fff;
 }
 
-
 .buttonList {
     height: 70px;
     display: flex;
@@ -26,15 +25,15 @@
     font-weight: 700;
     
 }
- 
-.linkBtn, .linkBtn:hover {
-    text-decoration: none;
-    color: inherit;
+
+.linkBtn,
+.linkBtn:hover {
+  text-decoration: none;
+  color: inherit;
 }
 
 .navBtn {
-    cursor: pointer;
-    margin-right: 5em;
-    text-decoration: none;
-
+  cursor: pointer;
+  margin-right: 5em;
+  text-decoration: none;
 }
