@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Filter.css";
+
 import { houses } from "../Listing/Listings";
 import { useNavigate } from "react-router-dom";
 
@@ -8,6 +9,10 @@ const Filter = () => {
   const [chosenCity, setChosenCity] = useState(""); // changed the spelling of the variable name
 
   const navigate = useNavigate();
+
+const Filter = () => {
+  const [filterValue, setFilterValue] = useState("");
+
   const handleFilterChange = (event) => {
     setFilterValue(event.target.value.toLowerCase());
   };
@@ -35,6 +40,27 @@ const Filter = () => {
           const shouldHide =
             filterValue &&
             !destination.city.toLowerCase().includes(filterValue);
+  const destinations = [
+    { name: "Paris", className: "paris" },
+    { name: "Marseille", className: "marseille" },
+    { name: "Nice", className: "nice" },
+    { name: "Montpellier", className: "montpellier" },
+    { name: "Saint-Tropez", className: "saint-tropez" },
+    { name: "Lyon", className: "lyon" },
+  ];
+
+  return (
+    <div>
+      <div className="filtercontainer">
+        <p>Choose your destination</p>
+        <input type="search" onChange={handleFilterChange} />
+      </div>
+
+      <div className="containerdestination">
+        {destinations.map((destination, index) => {
+          const { name, className } = destination;
+          const shouldHide =
+            filterValue && !name.toLowerCase().includes(filterValue);
 
           return (
             <div
@@ -44,6 +70,8 @@ const Filter = () => {
             >
               {/* Added an image tag to display the city image */}
               <span>{destination.city}</span>
+            >
+              {name}
             </div>
           );
         })}

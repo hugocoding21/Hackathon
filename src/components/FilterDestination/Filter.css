@@ -10,6 +10,9 @@
 }
 
 .title {
+}
+
+p {
   font-size: 2.5rem;
   font-weight: 800;
 }
@@ -27,6 +30,19 @@
   border: 2px solid #4b60a4;
   color: #4b60a4;
 
+input {
+  all: unset;
+  width: 30vw;
+  min-height: 5vh;
+  margin: auto;
+  border-radius: 30px;
+  color: black;
+  font-family: Outfit;
+  font-size: 1.3rem;
+  font-weight: 500;
+  border: 2px solid black;
+  color: #f54f29;
+  background-color: #ffd393;
   padding-left: 1rem;
 }
 
@@ -56,6 +72,20 @@
   /* border: 2px solid black;  */
   transition: all 0.5s ease-in-out;
   /* background-color: rgb(0, 93, 175); */
+
+.card {
+  border-radius: 25px;
+  height: 25vh;
+  width: 25vw;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  color: #f54f29;
+  font-size: 3rem;
+  font-weight: 700;
+  /* border: 2px solid black; */
+  transition: all 0.5s ease-in-out;
 }
 .card:hover {
   transform: scale(1.1);
@@ -166,5 +196,27 @@
 
 .Rabat {
   background-image: url(./img/rabat.jpg);
+.paris {
+  background-image: url(../img/paris.jpg);
+  background-size: cover;
+}
+.marseille {
+  background-image: url(../img/marseille2.jpg);
+  background-size: cover;
+}
+.nice {
+  background-image: url(../img/nice.jpg);
+  background-size: cover;
+}
+.montpellier {
+  background-image: url(../img/montpellier.jpeg);
+  background-size: cover;
+}
+.lyon {
+  background-image: url(../img/lyon.jpg);
+  background-size: cover;
+}
+.saint-tropez {
+  background-image: url(../img/saint-tropez.webp);
   background-size: cover;
 }

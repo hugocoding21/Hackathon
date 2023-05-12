@@ -8,6 +8,8 @@ const Navbar = () => {
   return (
     <div className="navContainer">
       <h2>HomeChange</h2>
+
+      <img src={"./img/logo1.jpg"} />
       <ul className="buttonList">
         <li className="navBtn">
           <NavLink to="/" className="linkBtn">
