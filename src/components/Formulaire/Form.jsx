@@ -97,11 +97,11 @@ return (
               alt="city"
             ></img>
             <p className="title-check">
-              <strong> Check-In:</strong> {checkOutDate}
+              <strong> Check-In:</strong>  {checkInDate} 
             </p>
             <p className="title-check">
               <strong>Check-Out: </strong>
-              {checkInDate}
+              {checkOutDate}
             </p>
           </div>
         </div>
