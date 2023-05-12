@@ -1,10 +1,64 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Form.css";
+import ReactModal from "react-modal";
 
 const Form = () => {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    if (
+      firstname.trim() &&
+      address.trim() &&
+      phoneNumber.trim() &&
+      email.trim()
+    ) {
+      setShowModal(true);
+    } else {
+      alert("Please fill in all fields.");
+    }
+  };
+
+  const [firstname, setFirstName] = useState("");
+  const handleChangeFirstname = (event) => {
+    const letterValue = event.target.value;
+    setFirstName(letterValue);
+  };
+
+  const [lastname, setLastName] = useState("");
+  const handleChangeLastName = (event) => {
+    const letterValue = event.target.value;
+    setLastName(letterValue);
+  };
+
+  const [address, setAdress] = useState("");
+  const handleChangeAddress = (event) => {
+    const letterValue = event.target.value;
+    setAdress(letterValue);
+  };
+
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const handleChangePhoneNumber = (event) => {
+    const letterValue = event.target.value;
+    setPhoneNumber(letterValue);
+  };
+
+  const [email, setEmail] = useState("");
+  const handleChangeEmail = (event) => {
+    const letterValue = event.target.value;
+    setEmail(letterValue);
+  };
+  const [showModal, setShowModal] = useState(false);
+  const ModalContent = () => {
+    return (
+      <div className="Modal">
+        <h2>Confirmation</h2>
+        <p>Your form has been successfully submitted.</p>
+        <button onClick={() => setShowModal(false)}>Close</button>
+      </div>
+    );
+  };
+
   return (
     <div>
-      <div className="nav"></div>
       <div className="all-form">
         <div className="reservation">
           <p className="sentence-destination">
@@ -23,7 +77,7 @@ const Form = () => {
             <p>date</p>
           </div>
         </div>
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className="form-container">
             <h1 className="title-confirmation">Confirmation Form</h1>
 
@@ -32,23 +86,28 @@ const Form = () => {
               id="firstname"
               type="text"
               placeholder="Your firstname"
+              value={firstname}
+              onChange={handleChangeFirstname}
               className="inputs"
               required
             />
-            <label htmlFor="name">Name:</label>
+            <label htmlFor="name">LastName:</label>
             <input
               id="name"
               type="text"
               placeholder="Your name"
+              value={lastname}
+              onChange={handleChangeLastName}
               className="inputs"
               required
             />
-            <label htmlFor="adress">Adress:</label>
+            <label htmlFor="adress">Address:</label>
             <input
               id="adress"
               type="text"
               placeholder="Your adress"
-              value=""
+              value={address}
+              onChange={handleChangeAddress}
               className="inputs"
               required
             />
@@ -57,23 +116,32 @@ const Form = () => {
               id="phone"
               type="text"
               placeholder="Your phone"
+              value={phoneNumber}
+              onChange={handleChangePhoneNumber}
               className="inputs"
               required
             />
             <label htmlFor="email">Email:</label>
             <input
               id="email"
-              type="text"
+              type="email"
               placeholder="Your email"
+              value={email}
+              onChange={handleChangeEmail}
               className="inputs"
               required
             />
-            <button className="btn-submit" type="submit">
-              Submit
-            </button>
+            <button className="btn-submit">Submit</button>
           </div>
         </form>
       </div>
+      <ReactModal
+        isOpen={showModal}
+        onRequestClose={() => setShowModal(false)}
+        contentLabel="Confirmation"
+      >
+        <ModalContent />
+      </ReactModal>
     </div>
   );
 };
