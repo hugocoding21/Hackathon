@@ -24,7 +24,7 @@
 }
 
 .house {
-    background-color: red;
+    background-color: rgb(186, 235, 214);
     border-radius: 5px;
    margin: 10px;
     width: 20em;
@@ -54,11 +54,11 @@
     font-family: 'Kanit', sans-serif;
         position: absolute;
         top: 15%;
-        left: 5%;
+        left: 10%;
         padding: 1rem 3rem;
         background: rgb(237, 224, 216);
         width: 80em;
-        height: 75vh;
+        height: 78vh;
         padding-top: 2rem;
         border-radius: 20px;
         border: 0;
@@ -131,12 +131,8 @@
 
 .images_slide{
     position: relative;
-    float: right;
-    width: 300px;
-    height: 400px;
-    /* overflow: hidden; */
-    margin: 0 auto;
-    overflow-y: scroll;
+    display: flex;
+    justify-content: center;
 }
 .paragraph {
     margin: 10px;
@@ -145,9 +141,18 @@
 }
 
 .home_description {
-    width: 55em; 
+    width: 45em; 
     line-height: 2;
     font-family: 'Kanit', sans-serif;
     text-align: justify;
     margin: 5px;
+}
+.user {
+height: 200px;
+width: 200px;
+border-radius: 50%;
+float: right;
+position: absolute;
+right: 3em;
+top: 3em;
 }

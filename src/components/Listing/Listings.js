@@ -7,7 +7,7 @@ export const houses = [
         "description": "This charming one-bedroom apartment in the heart of Bordeaux is perfect for a romantic getaway. It's located in a historic building with plenty of character.",
         "latitude": 44.8404,
         "longitude": -0.5742,
-        "image": "https://www.randomimagewebsite.com/house10.jpg"
+        "image": "https://www.pexels.com/photo/brown-wooden-house-surrounded-by-grass-field-1571462/"
       },
       {
         "id": 2,

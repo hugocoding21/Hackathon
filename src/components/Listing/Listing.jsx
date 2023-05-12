@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { houses } from "./Listings";
 import "./Listing.scss";
-//import house from "./house.jpg";
+import house from "../house.jpg";
 import { useLocation } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 import { useNavigate } from "react-router-dom";
@@ -54,24 +54,26 @@ function Listing() {
       {filteredHouses.length === 0 && <p>No houses found in {chosenCity}</p>}
     {filteredHouses.map((data, key) => (
       <div key={key} className="house" onClick={() => openModal(data)}>
-         <img src={data.image} alt="" />
+       <img src={data.image} alt="" /> 
         <p className="paragraph">{data.description}</p>
       </div>
     ))}
-    <button className="btn">Change destination</button>
+    {/* <button className="btn">Change destination</button> */}
       </div>
 
       {selectedHouse && showModal && (
         <div className="modal" onClick={closeModal}>
           <div className="modal-content">
-            <h2>Book your house in {chosenCity}</h2>
+            <h2 className="">Book your house in {chosenCity}</h2>
             <p className="home_description">{selectedHouse.description}</p>
             <div className="images_slide">
-              {/* <img src={} />
-              <img src={} />
-              <img src={} /> */}
+              <img src={selectedHouse.image} alt="random" />
+              <img src={selectedHouse.image} alt="random" />
+              <img src={selectedHouse.image} alt="random" /> 
             </div>
-            <div className="user"><img src={user.picture.large} alt="user"/></div>
+            <div><img className="user" src={user.picture.large} alt="user"/>
+            <p className="userInfo">{user.name.first} {user.name.last}</p>
+            </div>
             <div className="buttons">
               <button className="btn" onClick={showConfirmationForm}>Instant Book</button>
               <button className="btn" onClick={contactHost}>Contact host</button>
@@ -87,3 +89,5 @@ function Listing() {
 }
 
 export default Listing;
+
+// https://www.pexels.com/collections/houses-toxvsbh/

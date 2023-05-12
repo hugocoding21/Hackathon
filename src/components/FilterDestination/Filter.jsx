@@ -22,10 +22,11 @@ const Filter = () => {
    
       <div className="filtercontainer">
         <p className="">Choose your destination</p>
-        <input type="search" onChange={handleFilterChange} className="searchBar"/>
+        <input type="search" onChange={handleFilterChange} className="searchBar" placeholder="Where do you want to travel...?"/>
       
-
+        <p>Discover all of our destinations: </p>
       <div className="containerdestination">
+       
         {houses.map((destination, index) => {
           // const { name } = destination;
           let className = destination.city;
@@ -39,7 +40,7 @@ const Filter = () => {
               onClick={() => showDestination(destination)}
             >
               {/* Added an image tag to display the city image */}
-              <img src="" alt={destination.city} />
+              <span>{destination.city}</span> 
               
             </div>
           );
