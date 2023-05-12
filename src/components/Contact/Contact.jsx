@@ -1,6 +1,6 @@
 import React,{useState} from "react";
 import Navbar from "../Navbar/Navbar";
-import "./Contact.scss"; 
+import "./Contact.scss";
 
 function Contact () {
   const [contact, setContact] = useState({
@@ -73,5 +73,4 @@ function Contact () {
     </>
   );
 }
-
-export default Contact; 
+export default Contact;
