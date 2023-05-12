@@ -7,7 +7,7 @@ export const houses = [
         "description": "This charming one-bedroom apartment in the heart of Bordeaux is perfect for a romantic getaway. It's located in a historic building with plenty of character.",
         "latitude": 44.8404,
         "longitude": -0.5742,
-        "image": "https://www.pexels.com/photo/brown-wooden-house-surrounded-by-grass-field-1571462/"
+        "image": "https://images.pexels.com/photos/1571462/pexels-photo-1571462.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       },
       {
         "id": 2,
@@ -16,7 +16,7 @@ export const houses = [
         "description": "This modern two-bedroom apartment in Lyon's 1st arrondissement is perfect for a family or a group of friends. It features a spacious living room, a fully equipped kitchen, and contemporary decor.",
         "latitude": 45.7679,
         "longitude": 4.8344,
-        "image": "https://www.randomimagewebsite.com/house11.jpg"
+        "image": "https://images.pexels.com/photos/439227/pexels-photo-439227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       },
       {
         "id": 3,
@@ -25,7 +25,7 @@ export const houses = [
         "description": "This cozy one-bedroom apartment in Montpellier's historic center is perfect for a solo traveler or a couple. It features a comfortable bed, a fully equipped kitchen, and a small balcony.",
         "latitude": 43.6099,
         "longitude": 3.8795,
-        "image": "https://www.randomimagewebsite.com/house12.jpg"
+        "image": "https://images.pexels.com/photos/6301168/pexels-photo-6301168.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       },
       {
         "id": 4,
@@ -34,7 +34,7 @@ export const houses = [
         "description": "This stylish two-bedroom apartment in Nice's city center is perfect for a family or a group of friends. It features a spacious living room, a fully equipped kitchen, and a balcony with a view.",
         "latitude": 43.7009,
         "longitude": 7.2680,
-        "image": "https://www.randomimagewebsite.com/house13.jpg"
+        "image": "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       },
       {
         "id": 5,
@@ -43,7 +43,7 @@ export const houses = [
         "description": "This bright one-bedroom apartment in Marseille's 1st arrondissement is perfect for a solo traveler or a couple. It features a comfortable bed, a fully equipped kitchen, and a small terrace.",
         "latitude": 43.2965,
         "longitude": 5.3718,
-        "image": "https://www.randomimagewebsite.com/house14.jpg"
+        "image": "https://images.pexels.com/photos/6775268/pexels-photo-6775268.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       },
       {
         "id": 6,
@@ -52,36 +52,28 @@ export const houses = [
         "description": "This spacious three-bedroom apartment in Nantes' historic center is perfect for a family or a group of friends. It features high ceilings, large windows, and beautiful decor.",
         "latitude": 47.2173,
         "longitude": -1.5534,
-        "image": "https://www.randomimagewebsite.com/house15.jpg"
+        "image": "https://images.pexels.com/photos/6121088/pexels-photo-6121088.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       },
       {
         "id":7,
         "description": "This charming house features a spacious living room, cozy bedrooms, and a lovely garden. It's located in a quiet neighborhood just minutes from the city center.",
         "city": "New York",
-        "image": [
-          "https://example.com/image1.jpg",
-          "https://example.com/image2.jpg",
-          "https://example.com/image3.jpg"
-        ]
+        "image": 
+          "https://images.pexels.com/photos/7214166/pexels-photo-7214166.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       },
       {
         "id":8,
         "description": "Escape the hustle and bustle of the city and unwind in this cozy cottage by the lake. Perfect for couples or small families, this charming retreat has everything you need for a relaxing getaway.",
         "city": "Seattle",
-        "image": [
-          "https://example.com/image4.jpg",
-          "https://example.com/image5.jpg",
-          "https://example.com/image6.jpg"
-        ]
+        "image": 
+          "https://images.pexels.com/photos/5875839/pexels-photo-5875839.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       },
       {
         "id":9,
         "description": "Indulge in luxury in this stunning villa with breathtaking views of the city. With five bedrooms, a private pool, and an outdoor dining area, it's the perfect place for a memorable family vacation or a getaway with friends.",
         "city": "Los Angeles",
         "image": [
-          "https://example.com/image7.jpg",
-          "https://example.com/image8.jpg",
-          "https://example.com/image9.jpg"
+          "https://images.pexels.com/photos/15173334/pexels-photo-15173334.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         ]
       },
       {
@@ -89,9 +81,7 @@ export const houses = [
         "description": "This beautiful house features an open-concept living space, modern appliances, and a backyard with a barbecue grill. It's the perfect place for families or groups of friends to gather and enjoy the sunny weather.",
         "city": "Miami",
         "image": [
-          "https://example.com/image10.jpg",
-          "https://example.com/image11.jpg",
-          "https://example.com/image12.jpg"
+          "https://images.pexels.com/photos/3016430/pexels-photo-3016430.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         ]
       },
       {
@@ -99,9 +89,7 @@ export const houses = [
         "description": "Located in the heart of the city, this spacious apartment features high ceilings, large windows, and modern furnishings. It's within walking distance to the best restaurants, shops, and attractions in town.",
         "city": "San Francisco",
         "image": [
-          "https://example.com/image13.jpg",
-          "https://example.com/image14.jpg",
-          "https://example.com/image15.jpg"
+          "https://images.pexels.com/photos/15242038/pexels-photo-15242038.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         ]
       },
       {
@@ -109,9 +97,7 @@ export const houses = [
         "description": "This cozy cabin is nestled in the mountains and surrounded by beautiful scenery. It's the perfect place to unwind and enjoy nature with your loved ones.",
         "city": "Asheville",
         "image": [
-          "https://example.com/image16.jpg",
-          "https://example.com/image17.jpg",
-          "https://example.com/image18.jpg"
+          "https://images.pexels.com/photos/2765436/pexels-photo-2765436.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         ]
       },
       {
@@ -119,9 +105,7 @@ export const houses = [
         "description": "This elegant mansion features a grand entrance, luxurious furnishings, and a stunning pool. It's perfect for hosting events, such as weddings or corporate retreats.",
         "city": "Houston",
         "image": [
-          "https://example.com/image19.jpg",
-          "https://example.com/image20.jpg",
-          "https://example.com/image21.jpg"
+          "https://images.pexels.com/photos/6957083/pexels-photo-6957083.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         ]
       },
       {
@@ -129,9 +113,7 @@ export const houses = [
         "description": "This modern apartment boasts an open-concept living space, sleek design, and stunning views of the city. It's the perfect place for couples or solo travelers looking to experience the best of urban living.",
         "city": "Toronto",
         "image": [
-          "https://example.com/image22.jpg",
-          "https://example.com/image23.jpg",
-          "https://example.com/image24.jpg"
+          "https://images.pexels.com/photos/6077368/pexels-photo-6077368.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         ]
       },
       {
@@ -141,7 +123,7 @@ export const houses = [
           "latitude": -33.9249,
           "longitude": 18.4241
         },
-        "image": "https://www.example.com/images/cape-town-villa.jpg"
+        "image": "https://images.pexels.com/photos/6775268/pexels-photo-6775268.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       },
       {
         "city": "Marrakech",
@@ -150,7 +132,7 @@ export const houses = [
           "latitude": 31.6295,
           "longitude": -7.9811
         },
-        "image": "https://www.example.com/images/marrakech-house.jpg"
+        "image": "https://images.pexels.com/photos/347141/pexels-photo-347141.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       },
       {
         "city": "Nairobi",
@@ -159,7 +141,7 @@ export const houses = [
           "latitude": -1.2921,
           "longitude": 36.8219
         },
-        "image": "https://www.example.com/images/nairobi-apartment.jpg"
+        "image": "https://images.pexels.com/photos/7195853/pexels-photo-7195853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       },
       {
         "city": "Johannesburg",
@@ -168,7 +150,7 @@ export const houses = [
           "latitude": -26.2041,
           "longitude": 28.0473
         },
-        "image": "https://www.example.com/images/johannesburg-penthouse.jpg"
+        "image": "https://images.pexels.com/photos/15088502/pexels-photo-15088502.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       },
       {
         "city": "Accra",
@@ -177,7 +159,7 @@ export const houses = [
           "latitude": 5.6037,
           "longitude": -0.187
         },
-        "image": "https://www.example.com/images/accra-house.jpg"
+        "image": "https://images.pexels.com/photos/1101140/pexels-photo-1101140.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       },
       {
         "city": "Lagos",
@@ -186,7 +168,7 @@ export const houses = [
           "latitude": 6.5244,
           "longitude": 3.3792
         },
-        "image": "https://www.example.com/images/lagos-bungalow.jpg"
+        "image": "https://images.pexels.com/photos/6758346/pexels-photo-6758346.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       },
       {
         "city": "Dar es Salaam",
@@ -195,7 +177,7 @@ export const houses = [
           "latitude": -6.7924,
           "longitude": 39.2083
         },
-        "image": "https://www.example.com/images/dar-es-salaam-apartment.jpg"
+        "image": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       },
       {
         "city": "Kigali",
@@ -204,7 +186,7 @@ export const houses = [
           "latitude": -1.9536,
           "longitude": 30.0605
         },
-        "image": "https://www.example.com/images/kigali-cottage.jpg"
+        "image": "https://images.pexels.com/photos/4915971/pexels-photo-4915971.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       },
       {
         "city": "Tunis",
@@ -213,7 +195,7 @@ export const houses = [
           "latitude": 36.8065,
           "longitude": 10.1815
         },
-        "image": "https://www.example.com/images/tunis-house.jpg"
+        "image": "https://images.pexels.com/photos/1013427/pexels-photo-1013427.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       },
     ]
 
