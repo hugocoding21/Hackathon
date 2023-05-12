@@ -8,6 +8,8 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 function Listing() {
+  const [meteoData, setMeteoData] = useState([])
+
   const [selectedHouse, setSelectedHouse] = useState(null);
   const [showModal, setShowModal] = useState(false);
   const location = useLocation();
@@ -66,6 +68,16 @@ function Listing() {
     getPet()
   }, []);
   
+  useEffect(() => {
+    fetch(`http://api.weatherapi.com/v1/forecast.json?key=29346aa7147e4bfea2d160503231105&q=${chosenCity}`)
+    .then(response => response.json())
+    .then(data => setMeteoData(data))
+}, [])
+
+console.log(meteoData)
+
+
+
   /* console.log(filteredHouses[0].image); */
   return (
     <>
@@ -85,7 +97,8 @@ function Listing() {
       {selectedHouse && showModal && (
         <div className="modal" onClick={closeModal}>
           <div className="modal-content">
-            <h2 className="">Book your house in {chosenCity}</h2>
+            <h2 className="">Book your house in {chosenCity}, currently temperature : {meteoData.current.temp_c}°C</h2>
+      
             <p className="home_description">{selectedHouse.description}</p>
             <div className="images_slide">
        
