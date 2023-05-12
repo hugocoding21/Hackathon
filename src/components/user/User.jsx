@@ -22,8 +22,8 @@ const User = () => {
   return (
     <div className="all">
       <div className="menu">
-        <div onClick={handlePostClick}>Post</div>
-        <div onClick={handleRequestClick}>Request</div>
+        <div onClick={handlePostClick} className="menuBtn">Post</div>
+        <div onClick={handleRequestClick} className="menuBtn">Request</div>
       </div>
 
       {showForm && (
@@ -68,7 +68,7 @@ const User = () => {
                   </div>
                 </div>
 
-                <div className="card1">
+                <div className="card2">
                   <div>Boby L'Eponge</div>
                   <div>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
