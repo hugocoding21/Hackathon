@@ -20,13 +20,11 @@
   min-height: 5vh;
   margin: 50px auto;
   border-radius: 30px;
-  color: #4b60a4;
+  color: black;
   font-family: "Kanit", sans-serif;
   font-size: 1.3rem;
   font-weight: 500;
-  border: 2px solid #4b60a4;
-  color: #4b60a4;
-
+  border: 2px solid  black;
   padding-left: 1rem;
 }
 

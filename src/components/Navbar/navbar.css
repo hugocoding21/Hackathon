@@ -3,7 +3,7 @@
   top: 0;
   height: 70px;
   width: 100%;
-  background: #4b60a4;
+  background: #a3b4ea;;
   z-index: 100;
   display: flex;
   justify-content: space-between;
@@ -13,7 +13,7 @@
 
 .navContainer h2 {
   margin-left: 2em;
-  color: #fff;
+  color: #000000;
 }
 
 .buttonList {
@@ -24,12 +24,13 @@
   z-index: 200;
   color: #fff;
   font-weight: 700;
+  font-size: larger;
 }
 
 .linkBtn,
 .linkBtn:hover {
   text-decoration: none;
-  color: inherit;
+  color: black;
 }
 
 .navBtn {
