@@ -9,7 +9,7 @@ import Form from "../Formulaire/Form";
 
 
 function Listing() {
-  const [meteoData, setMeteoData] = useState([])
+  
 
   const [selectedHouse, setSelectedHouse] = useState(null);
   const [showModal, setShowModal] = useState(false);
@@ -75,12 +75,10 @@ function Listing() {
     .then(data => setMeteoData(data))
 }, [])
 
-console.log(meteoData)
 
+/* console.log(meteoData.current.temp_c) */  
 
-
-  /* console.log(filteredHouses[0].image); */
-  return (
+return (
     <>
     <Navbar/>
     <div className="Listing_Container">
@@ -99,7 +97,7 @@ console.log(meteoData)
       {selectedHouse && showModal && (
         <div className="modal" onClick={closeModal}>
           <div className="modal-content">
-            <h2 className="">Book your house in {chosenCity}, current temperature : {meteoData.current.temp_c}°C</h2>
+            <h2 className="">Book your house in {chosenCity}{/* , current temperature : {meteoData.current.temp_c} °C */}</h2>
       
             <p className="home_description">{selectedHouse.description}</p>
             <div className="images_slide">
