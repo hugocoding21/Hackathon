@@ -113,7 +113,7 @@ console.log(meteoData)
               <img className="petImage"src={pet.image}/>
           
           
-            <p className="animal">If you want to come to my house, you will have to take care of me. My name is {pet.name}, and I can't wait to me you, <strong> human !</strong></p>
+            <p className="animal">If you want to come to my house, you will have to take care of me. My name is {pet.name}, and I can't wait to meet you, <strong> human !</strong></p>
             </div>
        
             <div className="buttons">
