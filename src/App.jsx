@@ -9,16 +9,20 @@ import Listing from "./components/Listing/Listing";
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Filter />}></Route>
-        <Route path="/listing" element={<Listing />}></Route>
-        <Route path="/Form" element={<Form />}></Route>
-        <Route path="/about" element={<About />}></Route>
-        <Route path="/user" element={<User />}></Route>
-      </Routes>
-    </>
+    <div className="pageapp">
+      <div className="navapp">
+        <Navbar />
+      </div>
+      <div className="containerapp">
+        <Routes>
+          <Route path="/" element={<Filter />}></Route>
+          <Route path="/listing" element={<Listing />}></Route>
+          <Route path="/Form" element={<Form />}></Route>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/user" element={<User />}></Route>
+        </Routes>
+      </div>
+    </div>
   );
 }
 
