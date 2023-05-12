@@ -14,19 +14,20 @@
 }
 
 .Listings_title {
-    color: red;
+    color: #20242e;
     position: absolute;
     top: -4em;
     left: 50%;
     transform: translateX(-50%);
     font-family: 'Kanit', sans-serif;
+    
 
 }
 
 .house {
     display: flex;
     flex-direction: column;
-    background-color: rgb(186, 235, 214);
+    background-color: #dae1f6;
     border-radius: 5px;
     margin: 10px;
     width: 20em;
@@ -107,11 +108,11 @@
 }
 
 .btn{
-    box-shadow:inset -1px 1px 0px 0px #cf866c;
-	background:linear-gradient(to bottom, #f54f29 5%, #f54f29 100%);
-	background-color:#f54f29;
+    box-shadow:inset -1px 1px 0px 0px #a3b4ea;
+	background:linear-gradient(to bottom, #a3b4ea 5%, #a3b4ea 100%);
+	background-color:#a3b4ea;
 	border-radius:3px;
-	border:1px solid #f54f29;
+	border:1px solid #a3b4ea;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
@@ -120,12 +121,12 @@
 	font-weight:bold;
 	padding:8px 18px;
 	text-decoration:none;
-	text-shadow:0px 5px 0px #f54f29;
+	text-shadow:0px 5px 0px #a3b4ea;
     margin: 10px;
 }
 .btn:hover {
-	background:linear-gradient(to bottom,  #f54f29 5%, #e7937e 100%);
-	background-color: #f54f29;
+	background:linear-gradient(to bottom,  #a3b4ea 5%, #a3b4ea 100%);
+	background-color: #a3b4ea;
 }
 .btn:active {
 	position:relative;
