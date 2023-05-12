@@ -8,6 +8,7 @@ const Form = () => {
 
   const location = useLocation();
   const chosenCity = location?.state?.chosenCity;
+  const selectedHouse = location?.state?.selectedHouse;
 
 
   const handleSubmit = (event) => {
@@ -86,7 +87,7 @@ const Form = () => {
             <h2 className="name-destination">{chosenCity}</h2>
             <img
               className="img-destination"
-              src={""}
+              src={selectedHouse}
               alt="city"
             ></img>
                  <p><strong> Check-In:</strong> {checkOutDate}</p> 

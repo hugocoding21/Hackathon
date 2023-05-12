@@ -30,7 +30,7 @@ function Listing() {
   };
 
   const showConfirmationForm = () => {
-    navigate("/Form", { state: {chosenCity:chosenCity }}); 
+    navigate("/Form", { state: {chosenCity:chosenCity, selectedHouse: selectedHouse.image }}); 
   }
 
   const contactHost = () => {
