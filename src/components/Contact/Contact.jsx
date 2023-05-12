@@ -1,8 +1,18 @@
 import React,{useState} from "react";
 import Navbar from "../Navbar/Navbar";
 import "./Contact.scss";
+import ReactModal from "react-modal";
 
 function Contact () {
+ 
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    return (
+      alert("Your message has been sent to you host")
+    )
+  };
+
   const [contact, setContact] = useState({
     fName: "",
     lName: "",
@@ -34,6 +44,8 @@ function Contact () {
       }
     });
   }
+
+
 
   return (
     <> 
@@ -67,8 +79,11 @@ function Contact () {
           name="email"
           placeholder="Email"
         />
-        <button className="btnContact">Submit</button>
+         <label htmlFor="desc"></label>
+              <textarea placeholder="write your message" className="formulaireuser desc" type="text" id="desc" />
+        <button className="btnContact" onClick={handleSubmit}>Submit</button>
       </form>
+    
     </div>
     </>
   );

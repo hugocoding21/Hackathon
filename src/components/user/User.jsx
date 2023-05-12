@@ -46,7 +46,7 @@ const User = () => {
               />{" "}
               <label htmlFor="city">City</label>
               <input className="formulaireuser" type="text" id="city" />
-              <label htmlFor="desc">Description</label>
+              <label htmlFor="desc">Describe your house</label>
               <textarea className="formulaireuser desc" type="text" id="desc" />
               <label htmlFor="submite"></label>
               <button
