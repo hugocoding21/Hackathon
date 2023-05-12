@@ -26,6 +26,8 @@
   font-weight: 500;
   border: 2px solid black;
   padding-left: 1rem;
+  margin-top: auto;
+  margin-bottom: 2vh;
 }
 
 /* article destination */
