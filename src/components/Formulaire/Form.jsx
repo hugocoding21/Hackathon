@@ -1,15 +1,13 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import "./Form.css";
 import Navbar from "../Navbar/Navbar";
 import ReactModal from "react-modal";
 
 const Form = () => {
-
   const location = useLocation();
   const chosenCity = location?.state?.chosenCity;
   const selectedHouse = location?.state?.selectedHouse;
-
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -74,9 +72,8 @@ const Form = () => {
   };
 
   return (
-   
     <div>
-       <Navbar/>
+      <Navbar />
       <div className="all-form">
         <div className="reservation">
           <p className="sentence-destination">
@@ -90,9 +87,13 @@ const Form = () => {
               src={selectedHouse}
               alt="city"
             ></img>
-                 <p><strong> Check-In:</strong> {checkOutDate}</p> 
-            <p><strong>Check-Out: </strong>{checkInDate}</p>
-       
+            <p className="title-check">
+              <strong> Check-In:</strong> {checkOutDate}
+            </p>
+            <p className="title-check">
+              <strong>Check-Out: </strong>
+              {checkInDate}
+            </p>
           </div>
         </div>
         <form onSubmit={handleSubmit}>
