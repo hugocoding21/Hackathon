@@ -1,4 +1,3 @@
-
 export const houses = [
       {
         "id": 1,

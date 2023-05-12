@@ -14,10 +14,9 @@ function Listing() {
   const [showModal, setShowModal] = useState(false);
   const location = useLocation();
   const chosenCity = location?.state?.chosenCity;
-  const filteredHouses = houses.filter(data => chosenCity === data.city);
+  const filteredHouses = houses.filter((data) => chosenCity === data.city);
   const [user, setUser] = useState();
   const [pet, setPet] = useState();
-
 
   const navigate = useNavigate();
   const openModal = (house) => {
@@ -31,14 +30,14 @@ function Listing() {
   };
 
   const showConfirmationForm = () => {
-    navigate("/Form", { state: {chosenCity:chosenCity } }); 
-  }
+    navigate("/Form", { state: { chosenCity: chosenCity } });
+  };
 
   const contactHost = () => {
-    navigate("/contact"); 
-  }
+    navigate("/contact");
+  };
   //show random profiles
-  
+
   const getUser = () => {
     axios
       .get("https://randomuser.me/api?nat=en")
@@ -64,8 +63,8 @@ function Listing() {
       });
   };
   useEffect(() => {
-    getUser()
-    getPet()
+    getUser();
+    getPet();
   }, []);
   
   useEffect(() => {
@@ -108,15 +107,22 @@ console.log(meteoData)
             <p className="userInfo">{user.name.first} {user.name.last}</p>
             </div>
             <div className="pet">
-              <img className="petImage"src={pet.image}/>
-          
-          
-            <p className="animal">If you want to come to my house, you will have to take care of me. My name is {pet.name}, and I can't wait to me you, <strong> human !</strong></p>
+              <img className="petImage" src={pet.image} />
+
+              <p className="animal">
+                If you want to come to my house, you will have to take care of
+                me. My name is {pet.name}, and I can't wait to me you,{" "}
+                <strong> human !</strong>
+              </p>
             </div>
-       
+
             <div className="buttons">
-              <button className="btn" onClick={showConfirmationForm}>Instant Book</button>
-              <button className="btn" onClick={contactHost}>Contact host</button>
+              <button className="btn" onClick={showConfirmationForm}>
+                Instant Book
+              </button>
+              <button className="btn" onClick={contactHost}>
+                Contact host
+              </button>
             </div>
             <button onClick={closeModal} aria-label="close" className="x">
               ❌
@@ -129,4 +135,3 @@ console.log(meteoData)
 }
 
 export default Listing;
-
