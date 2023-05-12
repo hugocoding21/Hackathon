@@ -1,64 +1,76 @@
-import React from "react";
+import React,{useState} from "react";
 import Navbar from "../Navbar/Navbar";
 import "./Contact.scss";
 
-function Contact() {
-  return (
-    <div>
-      <Navbar />
-      <form className="contact_Form">
-        <div className="form-container">
-          <h1 className="title-confirmation">Confirmation Form</h1>
+function Contact () {
+  const [contact, setContact] = useState({
+    fName: "",
+    lName: "",
+    email: ""
+  });
 
-          <label htmlFor="firstname">Firstname:</label>
-          <input
-            id="firstname"
-            type="text"
-            placeholder="Your firstname"
-            className="inputs"
-            required
-          />
-          <label htmlFor="name">Name:</label>
-          <input
-            id="name"
-            type="text"
-            placeholder="Your name"
-            className="inputs"
-            required
-          />
-          <label htmlFor="adress">Adress:</label>
-          <input
-            id="adress"
-            type="text"
-            placeholder="Your adress"
-            value=""
-            className="inputs"
-            required
-          />
-          <label htmlFor="phone">Phone number:</label>
-          <input
-            id="phone"
-            type="text"
-            placeholder="Your phone"
-            className="inputs"
-            required
-          />
-          <label htmlFor="email">Email:</label>
-          <input
-            id="email"
-            type="text"
-            placeholder="Your email"
-            className="inputs"
-            required
-          />
-          <button className="btn-submit" type="submit">
-            Submit
-          </button>
-        </div>
+  function handleChange(event) {
+    const { name, value } = event.target;
+
+    setContact((prevValue) => {
+      if (name === "fName") {
+        return {
+          fName: value,
+          lName: prevValue.lName,
+          email: prevValue.email
+        };
+      } else if (name === "lName") {
+        return {
+          fName: prevValue.fName,
+          lName: value,
+          email: prevValue.email
+        };
+      } else if (name === "email") {
+        return {
+          fName: prevValue.fName,
+          lName: prevValue.lName,
+          email: value
+        };
+      }
+    });
+  }
+
+  return (
+    <> 
+
+    
+    
+    <div className="contactContainer">
+     
+      <h1>
+        Hello {contact.fName} {contact.lName}
+      </h1>
+      <p>{contact.email}</p>
+      <form>
+        <input
+        className="text"
+          onChange={handleChange}
+          value={contact.fName}
+          name="fName"
+          placeholder="First Name"
+        />
+        <input className="text"
+          onChange={handleChange}
+          value={contact.lName}
+          name="lName"
+          placeholder="Last Name"
+        />
+        <input
+        className="text"
+          onChange={handleChange}
+          value={contact.email}
+          name="email"
+          placeholder="Email"
+        />
+        <button className="btnContact">Submit</button>
       </form>
-      *
     </div>
+    </>
   );
 }
-
 export default Contact;
