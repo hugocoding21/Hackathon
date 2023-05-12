@@ -1,12 +1,12 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
-import "./Contact.scss"; 
+import "./Contact.scss";
 
-function Contact () {
-    return (
-        <div> 
-        <Navbar/>
-        <form className="contact_Form">
+function Contact() {
+  return (
+    <div>
+      <Navbar />
+      <form className="contact_Form">
         <div className="form-container">
           <h1 className="title-confirmation">Confirmation Form</h1>
 
@@ -55,9 +55,10 @@ function Contact () {
             Submit
           </button>
         </div>
-      </form>*</div>
-    )
-
+      </form>
+      *
+    </div>
+  );
 }
 
-export default Contact; 
+export default Contact;
