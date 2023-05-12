@@ -5,6 +5,8 @@ import { useLocation } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import Form from "../Formulaire/Form";
+
 
 function Listing() {
   const [meteoData, setMeteoData] = useState([])
@@ -89,6 +91,7 @@ console.log(meteoData)
        <img src={data.image} className="cityHouseImg" alt="" /> 
         <p className="paragraph">{data.description}</p>
       </div>
+      
     ))}
     {/* <button className="btn">Change destination</button> */}
       </div>
@@ -96,7 +99,7 @@ console.log(meteoData)
       {selectedHouse && showModal && (
         <div className="modal" onClick={closeModal}>
           <div className="modal-content">
-            <h2 className="">Book your house in {chosenCity}, currently temperature : {meteoData.current.temp_c}°C</h2>
+            <h2 className="">Book your house in {chosenCity}, current temperature : {meteoData.current.temp_c}°C</h2>
       
             <p className="home_description">{selectedHouse.description}</p>
             <div className="images_slide">

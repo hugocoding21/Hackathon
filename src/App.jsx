@@ -6,6 +6,7 @@ import User from "./components/user/User";
 import Navbar from "./components/Navbar/Navbar";
 import Form from "./components/Formulaire/Form";
 import Listing from "./components/Listing/Listing";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
           <Route path="/Form" element={<Form />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/user" element={<User />}></Route>
-        </Routes>
+          <Route path="/contact" element={<Contact />}></Route>
+      </Routes>
       </div>
     </div>
   );

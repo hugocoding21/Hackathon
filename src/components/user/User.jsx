@@ -22,34 +22,31 @@ const User = () => {
   return (
     <div className="all">
       <div className="menu">
-        <div onClick={handlePostClick}>Post</div>
-        <div onClick={handleRequestClick}>Request</div>
+        <div onClick={handlePostClick} className="menuBtn">Post</div>
+        <div onClick={handleRequestClick} className="menuBtn">Request</div>
       </div>
 
       {showForm && (
         <div className="form">
           {
             <div className="form">
-              <label htmlFor="Firstname">Firstname:</label>
+              <label htmlFor="Firstname">Firstname</label>
               <input className="formulaireuser" type="text" id="Firstname" />
-              <label htmlFor="Lastname">Lastname:</label>
+              <label htmlFor="Lastname">Lastname</label>
               <input
                 className="formulaireuser"
                 type="text"
                 id="Lastname"
               />{" "}
-              <br />
-              <label htmlFor="city">city:</label>
+              <label htmlFor="city">City</label>
               <input className="formulaireuser" type="text" id="city" />
-              <label htmlFor="img">images:</label>
-              <input className="formulaireuser" type="file" id="img" />
-              <label htmlFor="desc">description:</label>
-              <input className="formulaireuser desc" type="text" id="desc" />
+              <label htmlFor="desc">Description</label>
+              <textarea className="formulaireuser desc" type="text" id="desc" />
               <label htmlFor="submite"></label>
               <input
                 className="formulaireuserb"
                 type="button"
-                value="submit"
+                value="Submit"
               />{" "}
             </div>
           }
@@ -71,7 +68,7 @@ const User = () => {
                   </div>
                 </div>
 
-                <div className="card1">
+                <div className="card2">
                   <div>Boby L'Eponge</div>
                   <div>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
