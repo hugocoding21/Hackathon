@@ -65,3 +65,27 @@
 .hidden {
   display: none;
 }
+.paris {
+  background-image: url(../../assets/img/paris.jpg);
+  background-size: cover;
+}
+.marseille {
+  background-image: url(../../assets/img/marseille2.jpg);
+  background-size: cover;
+}
+.nice {
+  background-image: url(../../assets/img/nice.jpg);
+  background-size: cover;
+}
+.montpellier {
+  background-image: url(../../assets/img/montpellier.jpeg);
+  background-size: cover;
+}
+.lyon {
+  background-image: url(../../assets/img/lyon.jpg);
+  background-size: cover;
+}
+.saint-tropez {
+  background-image: url(../../assets/img/saint-tropez.webp);
+  background-size: cover;
+}

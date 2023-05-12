@@ -66,6 +66,7 @@ function Listing() {
     getPet()
   }, []);
   
+  /* console.log(filteredHouses[0].image); */
   return (
     <>
     <Navbar/>
@@ -74,7 +75,7 @@ function Listing() {
       {filteredHouses.length === 0 && <p>No houses found in {chosenCity}</p>}
     {filteredHouses.map((data, key) => (
       <div key={key} className="house" onClick={() => openModal(data)}>
-       <img src={data.image} alt="" /> 
+       <img src={data.image} className="cityHouseImg" alt="" /> 
         <p className="paragraph">{data.description}</p>
       </div>
     ))}
@@ -88,6 +89,7 @@ function Listing() {
             <p className="home_description">{selectedHouse.description}</p>
             <div className="images_slide">
        
+              <img src={selectedHouse.image} className="cityHouseImgModal" alt="random" />
             </div>
             <div><img className="user" src={user.picture.large} alt="user"/>
             <p className="userInfo">{user.name.first} {user.name.last}</p>
