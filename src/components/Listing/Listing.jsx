@@ -12,7 +12,7 @@ function Listing() {
   const [showModal, setShowModal] = useState(false);
   const location = useLocation();
   const chosenCity = location?.state?.chosenCity;
-  const filteredHouses = houses.filter(data => chosenCity === data.city);
+  const filteredHouses = houses.filter((data) => chosenCity === data.city);
   const navigate = useNavigate();
   const openModal = (house) => {
     setSelectedHouse(house);
@@ -25,16 +25,15 @@ function Listing() {
   };
 
   const showConfirmationForm = () => {
-    navigate("/Form", { state: {chosenCity:chosenCity } }); 
-  }
+    navigate("/Form", { state: { chosenCity: chosenCity } });
+  };
 
   const contactHost = () => {
-    navigate("/contact"); 
-  }
+    navigate("/contact");
+  };
   //show random profiles
   const [user, setUser] = useState();
   const getUser = () => {
-    
     axios
       .get("https://randomuser.me/api?nat=en")
       .then((response) => response.data)
@@ -43,22 +42,22 @@ function Listing() {
       });
   };
   useEffect(() => {
-    getUser()
+    getUser();
   }, []);
-  
+
   return (
     <>
-    <Navbar/>
-    <div className="Listing_Container">
-      <h1 className="Listings_title">Homes in {chosenCity}</h1>
-      {filteredHouses.length === 0 && <p>No houses found in {chosenCity}</p>}
-    {filteredHouses.map((data, key) => (
-      <div key={key} className="house" onClick={() => openModal(data)}>
-       <img src={data.image} alt="" /> 
-        <p className="paragraph">{data.description}</p>
-      </div>
-    ))}
-    {/* <button className="btn">Change destination</button> */}
+      <Navbar />
+      <div className="Listing_Container">
+        <h1 className="Listings_title">Homes in {chosenCity}</h1>
+        {filteredHouses.length === 0 && <p>No houses found in {chosenCity}</p>}
+        {filteredHouses.map((data, key) => (
+          <div key={key} className="house" onClick={() => openModal(data)}>
+            <img src={data.image} alt="" />
+            <p className="paragraph">{data.description}</p>
+          </div>
+        ))}
+        {/* <button className="btn">Change destination</button> */}
       </div>
 
       {selectedHouse && showModal && (
@@ -69,14 +68,21 @@ function Listing() {
             <div className="images_slide">
               <img src={selectedHouse.image} alt="random" />
               <img src={selectedHouse.image} alt="random" />
-              <img src={selectedHouse.image} alt="random" /> 
+              <img src={selectedHouse.image} alt="random" />
             </div>
-            <div><img className="user" src={user.picture.large} alt="user"/>
-            <p className="userInfo">{user.name.first} {user.name.last}</p>
+            <div>
+              <img className="user" src={user.picture.large} alt="user" />
+              <p className="userInfo">
+                {user.name.first} {user.name.last}
+              </p>
             </div>
             <div className="buttons">
-              <button className="btn" onClick={showConfirmationForm}>Instant Book</button>
-              <button className="btn" onClick={contactHost}>Contact host</button>
+              <button className="btn" onClick={showConfirmationForm}>
+                Instant Book
+              </button>
+              <button className="btn" onClick={contactHost}>
+                Contact host
+              </button>
             </div>
             <button onClick={closeModal} aria-label="close" className="x">
               ❌
