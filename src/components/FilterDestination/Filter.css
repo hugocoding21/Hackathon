@@ -59,26 +59,26 @@ input {
   display: none;
 }
 .paris {
-  background-image: url(../img/paris.jpg);
+  background-image: url(../../assets/img/paris.jpg);
   background-size: cover;
 }
 .marseille {
-  background-image: url(../img/marseille2.jpg);
+  background-image: url(../../assets/img/marseille2.jpg);
   background-size: cover;
 }
 .nice {
-  background-image: url(../img/nice.jpg);
+  background-image: url(../../assets/img/nice.jpg);
   background-size: cover;
 }
 .montpellier {
-  background-image: url(../img/montpellier.jpeg);
+  background-image: url(../../assets/img/montpellier.jpeg);
   background-size: cover;
 }
 .lyon {
-  background-image: url(../img/lyon.jpg);
+  background-image: url(../../assets/img/lyon.jpg);
   background-size: cover;
 }
 .saint-tropez {
-  background-image: url(../img/saint-tropez.webp);
+  background-image: url(../../assets/img/saint-tropez.webp);
   background-size: cover;
 }
