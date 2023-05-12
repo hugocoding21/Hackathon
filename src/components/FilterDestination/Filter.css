@@ -43,6 +43,7 @@
   font-size: 1.2rem;
 }
 .card {
+  cursor:pointer;
   border-radius: 25px;
   height: 20vh;
   width: 15vw;
