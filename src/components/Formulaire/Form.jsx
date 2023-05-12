@@ -1,81 +1,47 @@
-import React from "react";
+import React, {useState} from "react";
+import Navbar from "../Navbar/Navbar";
 import "./Form.css";
+import { useLocation } from "react-router-dom";
 
 const Form = () => {
-  return (
-    <div>
-      <div className="nav"></div>
-      <div className="all-form">
-        <div className="reservation">
-          <p className="sentence-destination">
-            You have just chosen your dream destination, <br />
-            here is a summary before booking.
-          </p>
-          <div className="lieu-reservation">
-            <h2 className="name-destination">Nom de la Destination</h2>
-            <img
-              className="img-destination"
-              src="https://cdn.getyourguide.com/img/location/5ffeb392eb81e.jpeg/68.jpg"
-              alt="paris"
-            ></img>
-            <p>Appartment</p>
-            <p>description</p>
-            <p>date</p>
-          </div>
-        </div>
-        <form>
-          <div className="form-container">
-            <h1 className="title-confirmation">Confirmation Form</h1>
+  const location = useLocation();
+  const chosenCity = location?.state?.chosenCity;
+//    const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [checkInDate, setCheckInDate] = useState('');
+  const [checkOutDate, setCheckOutDate] = useState('');
 
-            <label htmlFor="firstname">Firstname:</label>
-            <input
-              id="firstname"
-              type="text"
-              placeholder="Your firstname"
-              className="inputs"
-              required
-            />
-            <label htmlFor="name">Name:</label>
-            <input
-              id="name"
-              type="text"
-              placeholder="Your name"
-              className="inputs"
-              required
-            />
-            <label htmlFor="adress">Adress:</label>
-            <input
-              id="adress"
-              type="text"
-              placeholder="Your adress"
-              value=""
-              className="inputs"
-              required
-            />
-            <label htmlFor="phone">Phone number:</label>
-            <input
-              id="phone"
-              type="text"
-              placeholder="Your phone"
-              className="inputs"
-              required
-            />
-            <label htmlFor="email">Email:</label>
-            <input
-              id="email"
-              type="text"
-              placeholder="Your email"
-              className="inputs"
-              required
-            />
-            <button className="btn-submit" type="submit">
-              Submit
-            </button>
-          </div>
-        </form>
-      </div>
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(`Name: ${name}, Email: ${email}, Check-In Date: ${checkInDate}, Check-Out Date: ${checkOutDate}`);
+    // Add code to submit form data to backend or display confirmation message to user
+  };
+
+  return (
+    <div className="reservation-form-container">
+      {/* //<Navbar/> */}
+      <h2>Reservation Confirmation</h2>
+      <form onSubmit={handleSubmit}>
+        <div className="form-group">
+          <label htmlFor="name">Name:</label>
+          <input type="text" id="name" value={name} onChange={(e) => setName(e.target.value)} required />
+        </div>
+        <div className="form-group">
+          <label htmlFor="email">Email:</label>
+          <input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+        </div>
+        <div className="form-group">
+          <label htmlFor="checkInDate">Check-In Date:</label>
+          <input type="date" id="checkInDate" value={checkInDate} onChange={(e) => setCheckInDate(e.target.value)} required />
+        </div>
+        <div className="form-group">
+          <label htmlFor="checkOutDate">Check-Out Date:</label>
+          <input type="date" id="checkOutDate" value={checkOutDate} onChange={(e) => setCheckOutDate(e.target.value)} required />
+        </div>
+        <button type="submit">Confirm Reservation</button>
+      </form>
     </div>
   );
-};
+}
 
 export default Form;

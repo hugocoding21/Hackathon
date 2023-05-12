@@ -4,30 +4,36 @@
   align-items: center;
   row-gap: 1.5em;
   margin-bottom: 7vh;
+  position: relative;
+  top: 50%;
+  font-family: 'Kanit', sans-serif;
 }
 
-p {
+.title {
   font-size: 2.5rem;
   font-weight: 800;
 }
 
-input {
+.searchBar{
+ 
   all: unset;
   width: 30vw;
   min-height: 5vh;
-  margin: auto;
+  margin: 50px auto;
   border-radius: 30px;
   color: black;
-  font-family: Outfit;
+  font-family: 'Kanit', sans-serif;
   font-size: 1.3rem;
   font-weight: 500;
   border: 2px solid black;
-  color: #f54f29;
-  background-color: #ffd393;
+  color: black;
+  
   padding-left: 1rem;
 }
 
 /* article destination */
+
+
 .containerdestination {
   display: flex;
   justify-content: center;
@@ -38,17 +44,18 @@ input {
 
 .card {
   border-radius: 25px;
-  height: 25vh;
-  width: 25vw;
+  height: 15vh;
+  width: 10vw;
   padding: 15px;
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: center;
   color: #f54f29;
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-weight: 700;
-  /* border: 2px solid black; */
+   /* border: 2px solid black;  */
   transition: all 0.5s ease-in-out;
+  /* background-color: rgb(0, 93, 175); */
 }
 .card:hover {
   transform: scale(1.1);

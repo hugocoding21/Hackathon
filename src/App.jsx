@@ -1,12 +1,10 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, } from 'react-router-dom';
 import "./App.css";
-import Filter from "./components/FilterDestination/Filter";
-import React, { useEffect, useState } from "react";
-import About from "./components/AboutUS/About";
-import Navbar from "./components/Navbar/Navbar";
-
-
-
+import Home from './components/Home/Home';
+import About from './components/AboutUS/About';
+import Listing from './components/Listing/Listing';
+import Form from './components/Formulaire/Form'; 
+import Contact from "./components/Contact/Contact";
 function App() {
 const [meteoData, setMeteoData] = useState([])
 
@@ -19,21 +17,39 @@ const [meteoData, setMeteoData] = useState([])
   console.log(meteoData.current.temp_c)
   return (
 
-    
-    <div className="page">
-      <div className="nav">
-      
-        <Navbar />
+  <>
 
-      </div>
-      
-      <Routes>
-        <Route path="/" element={<Filter />}></Route>
-        <Route path="/about" element={<About />}></Route>
-      </Routes>
-    </div>
+    <Routes>
+        <Route
+          path="/"
+          element={
+            <Home/>}>
+        </Route>
+        <Route
+          path="/about"
+          element={
+            <About/>}>
+        </Route>
+        <Route
+          path="/listing"
+          element={
+            <Listing/>}>
+        </Route>
+        <Route
+          path="/Form"
+          element={
+            <Form/>}>
+        </Route>
+        <Route
+          path="/contact"
+          element={
+            <Contact/>}>
+        </Route>
 
-
+</Routes>
+  </>
+  
+  
   );
 }
 

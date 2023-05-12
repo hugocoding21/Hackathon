@@ -3,11 +3,12 @@
     top: 0;
     height: 70px;
     width: 100%;
-    background: #dfcaac;
+    background: #acb8df;
     z-index: 100;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: 'Kanit', sans-serif;
 }
 
 .navContainer h2{
