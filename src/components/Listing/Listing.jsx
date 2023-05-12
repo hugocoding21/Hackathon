@@ -8,6 +8,8 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 function Listing() {
+  const [meteoData, setMeteoData] = useState([])
+
   const [selectedHouse, setSelectedHouse] = useState(null);
   const [showModal, setShowModal] = useState(false);
   const location = useLocation();
@@ -64,33 +66,45 @@ function Listing() {
     getUser();
     getPet();
   }, []);
+  
+  useEffect(() => {
+    fetch(`http://api.weatherapi.com/v1/forecast.json?key=29346aa7147e4bfea2d160503231105&q=${chosenCity}`)
+    .then(response => response.json())
+    .then(data => setMeteoData(data))
+}, [])
 
+console.log(meteoData)
+
+
+
+  /* console.log(filteredHouses[0].image); */
   return (
     <>
-      <Navbar />
-      <div className="Listing_Container">
-        <h1 className="Listings_title">Homes in available {chosenCity}</h1>
-        {filteredHouses.length === 0 && <p>No houses found in {chosenCity}</p>}
-        {filteredHouses.map((data, key) => (
-          <div key={key} className="house" onClick={() => openModal(data)}>
-            <img src={data.image} alt="" />
-            <p className="paragraph">{data.description}</p>
-          </div>
-        ))}
-        {/* <button className="btn">Change destination</button> */}
+    <Navbar/>
+    <div className="Listing_Container">
+      <h1 className="Listings_title">Homes in available {chosenCity}</h1>
+      {filteredHouses.length === 0 && <p>No houses found in {chosenCity}</p>}
+    {filteredHouses.map((data, key) => (
+      <div key={key} className="house" onClick={() => openModal(data)}>
+       <img src={data.image} className="cityHouseImg" alt="" /> 
+        <p className="paragraph">{data.description}</p>
+      </div>
+    ))}
+    {/* <button className="btn">Change destination</button> */}
       </div>
 
       {selectedHouse && showModal && (
         <div className="modal" onClick={closeModal}>
           <div className="modal-content">
-            <h2 className="">Book your house in {chosenCity}</h2>
+            <h2 className="">Book your house in {chosenCity}, currently temperature : {meteoData.current.temp_c}°C</h2>
+      
             <p className="home_description">{selectedHouse.description}</p>
-            <div className="images_slide"></div>
-            <div>
-              <img className="user" src={user.picture.large} alt="user" />
-              <p className="userInfo">
-                {user.name.first} {user.name.last}
-              </p>
+            <div className="images_slide">
+       
+              <img src={selectedHouse.image} className="cityHouseImgModal" alt="random" />
+            </div>
+            <div><img className="user" src={user.picture.large} alt="user"/>
+            <p className="userInfo">{user.name.first} {user.name.last}</p>
             </div>
             <div className="pet">
               <img className="petImage" src={pet.image} />
