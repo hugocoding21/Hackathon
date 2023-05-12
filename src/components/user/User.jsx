@@ -19,6 +19,11 @@ const User = () => {
     setShowRequest(true);
   };
 
+
+  const handleClick = () => {
+    alert("Your ad has been published")
+  }
+
   return (
     <div className="all">
       <div className="menu">
@@ -30,6 +35,7 @@ const User = () => {
         <div className="form">
           {
             <div className="form">
+              <h2>Publish your house on our website</h2>
               <label htmlFor="Firstname">Firstname</label>
               <input className="formulaireuser" type="text" id="Firstname" />
               <label htmlFor="Lastname">Lastname</label>
@@ -43,11 +49,11 @@ const User = () => {
               <label htmlFor="desc">Description</label>
               <textarea className="formulaireuser desc" type="text" id="desc" />
               <label htmlFor="submite"></label>
-              <input
+              <button
                 className="formulaireuserb"
                 type="button"
-                value="Submit"
-              />{" "}
+                onClick={handleClick}
+              >Submit </button>
             </div>
           }
         </div>

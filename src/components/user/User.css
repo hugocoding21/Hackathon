@@ -63,6 +63,7 @@
   color: black;
   font-weight: bolder;
   font-size: 1.5rem;
+  font-family: "Kanit", sans-serif;
 }
 
 .request {
@@ -124,4 +125,13 @@ input:focus {
   padding: 0.5em;
   background-color: #a3b4ea;
   cursor: pointer;
+  font-family: "Kanit", sans-serif;
+}
+
+
+.form h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  color:rgb(166, 59, 54);
+  font-family: "Kanit", sans-serif;
 }
