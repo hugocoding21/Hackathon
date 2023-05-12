@@ -24,7 +24,7 @@ const Filter = () => {
         <p className="">Choose your destination</p>
         <input type="search" onChange={handleFilterChange} className="searchBar" placeholder="Where do you want to travel...?"/>
       
-        <p>Discover all of our destinations: </p>
+        <p className="header">Discover all of our destinations: </p>
       <div className="containerdestination">
        
         {houses.map((destination, index) => {
