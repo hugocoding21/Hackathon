@@ -67,17 +67,17 @@ function Listing() {
 
   return (
     <>
-      <Navbar />
-      <div className="Listing_Container">
-        <h1 className="Listings_title">Homes in available {chosenCity}</h1>
-        {filteredHouses.length === 0 && <p>No houses found in {chosenCity}</p>}
-        {filteredHouses.map((data, key) => (
-          <div key={key} className="house" onClick={() => openModal(data)}>
-            <img src={data.image} alt="" />
-            <p className="paragraph">{data.description}</p>
-          </div>
-        ))}
-        {/* <button className="btn">Change destination</button> */}
+    <Navbar/>
+    <div className="Listing_Container">
+      <h1 className="Listings_title">Homes in available {chosenCity}</h1>
+      {filteredHouses.length === 0 && <p>No houses found in {chosenCity}</p>}
+    {filteredHouses.map((data, key) => (
+      <div key={key} className="house" onClick={() => openModal(data)}>
+       <img src={data.image} className="cityHouseImg" alt="" /> 
+        <p className="paragraph">{data.description}</p>
+      </div>
+    ))}
+    {/* <button className="btn">Change destination</button> */}
       </div>
 
       {selectedHouse && showModal && (
@@ -85,12 +85,12 @@ function Listing() {
           <div className="modal-content">
             <h2 className="">Book your house in {chosenCity}</h2>
             <p className="home_description">{selectedHouse.description}</p>
-            <div className="images_slide"></div>
-            <div>
-              <img className="user" src={user.picture.large} alt="user" />
-              <p className="userInfo">
-                {user.name.first} {user.name.last}
-              </p>
+            <div className="images_slide">
+       
+              <img src={selectedHouse.image} className="cityHouseImgModal" alt="random" />
+            </div>
+            <div><img className="user" src={user.picture.large} alt="user"/>
+            <p className="userInfo">{user.name.first} {user.name.last}</p>
             </div>
             <div className="pet">
               <img className="petImage" src={pet.image} />
