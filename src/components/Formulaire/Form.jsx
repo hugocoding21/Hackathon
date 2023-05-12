@@ -19,7 +19,7 @@ const Form = () => {
 
   return (
     <div className="reservation-form-container">
-      {/* //<Navbar/> */}
+      <Navbar/> 
       <h2>Reservation Confirmation</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
@@ -39,7 +39,7 @@ const Form = () => {
           <input type="date" id="checkOutDate" value={checkOutDate} onChange={(e) => setCheckOutDate(e.target.value)} required />
         </div>
         <button type="submit">Confirm Reservation</button>
-      </form>
+      </form> 
     </div>
   );
 }
