@@ -1,18 +1,19 @@
 .navContainer {
   position: fixed;
   top: 0;
-  height: 10vh;
+  height: 70px;
   width: 100%;
-  background: #ffd393;
+  background: #4b60a4;
   z-index: 100;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: "Kanit", sans-serif;
 }
 
 .navContainer h2 {
   margin-left: 2em;
-  color: #f54f29;
+  color: #fff;
 }
 
 .buttonList {
@@ -21,7 +22,8 @@
   align-items: center;
   list-style-type: none;
   z-index: 200;
-  color: #f54f29;
+  color: #fff;
+  font-weight: 700;
 }
 
 .linkBtn,

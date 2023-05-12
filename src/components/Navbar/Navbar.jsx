@@ -1,15 +1,17 @@
 import React from "react";
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faHouse } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
   return (
     <div className="navContainer">
-      <img src="./img/logo1.jpg" />
+      <h2>HomeChange</h2>
       <ul className="buttonList">
         <li className="navBtn">
           <NavLink to="/" className="linkBtn">
-            Home
+            Home{" "}
           </NavLink>
         </li>
         <li className="navBtn">
@@ -18,7 +20,7 @@ const Navbar = () => {
           </NavLink>
         </li>
         <li className="navBtn">
-          <NavLink to="/user" className="linkBtn">
+          <NavLink to="/account" className="linkBtn">
             Account
           </NavLink>
         </li>

@@ -1,0 +1,170 @@
+.filtercontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1.5em;
+  margin-bottom: 7vh;
+  position: relative;
+  top: 50%;
+  font-family: "Kanit", sans-serif;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.searchBar {
+  all: unset;
+  width: 30vw;
+  min-height: 5vh;
+  margin: 50px auto;
+  border-radius: 30px;
+  color: #4b60a4;
+  font-family: "Kanit", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  border: 2px solid #4b60a4;
+  color: #4b60a4;
+
+  padding-left: 1rem;
+}
+
+/* article destination */
+
+.containerdestination {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+.title1 {
+  font-size: 1.2rem;
+}
+.card {
+  border-radius: 25px;
+  height: 20vh;
+  width: 15vw;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000000;
+  font-size: 1.5rem;
+  font-weight: 700;
+  /* border: 2px solid black;  */
+  transition: all 0.5s ease-in-out;
+  /* background-color: rgb(0, 93, 175); */
+}
+.card:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+}
+
+.hidden {
+  display: none;
+}
+
+.Bordeaux {
+  background-image: url(./img/bordeaux.webp);
+  background-size: cover;
+}
+
+.Lyon {
+  background-image: url(./img/lyon.jpg);
+  background-size: cover;
+}
+.Marseille {
+  background-image: url(./img/marseille.webp);
+  background-size: cover;
+}
+.Montpellier {
+  background-image: url(./img/montpellier.jpeg);
+  background-size: cover;
+}
+.Nice {
+  background-image: url(./img/nice.jpg);
+  background-size: cover;
+}
+.Paris {
+  background-image: url(./img/paris.jpg);
+  background-size: cover;
+}
+.Nantes {
+  background-image: url(./img/nantes.webp);
+  background-size: cover;
+}
+.Accro {
+  background-image: url(./img/accro.jpg);
+  background-size: cover;
+}
+.Asheville {
+  background-image: url(./img/ash.webp);
+  background-size: cover;
+}
+.Capetown {
+  background-image: url(./img/capetown.jpg);
+  background-size: cover;
+}
+.Houston {
+  background-image: url(./img/houston.jpg);
+  background-size: cover;
+}
+.Séoul {
+  background-image: url(./img/seoul.jpg);
+  background-size: cover;
+}
+.Miami {
+  background-image: url(./img/maimi.jpg);
+  background-size: cover;
+}
+.Marrakech {
+  background-image: url(./img/mara.jpg);
+  background-size: cover;
+}
+.Toronto {
+  background-image: url(./img/toronto.jpg);
+  background-size: cover;
+}
+.Tunis {
+  background-image: url(./img/tunis.jpg);
+  background-size: cover;
+}
+.Tokyo {
+  background-image: url(./img/tokyo.jpg);
+  background-size: cover;
+}
+.Seattle {
+  background-image: url(./img/seattle.jpeg);
+  background-size: cover;
+}
+.Nairobi {
+  background-image: url(./img/nairobi.jpg);
+  background-size: cover;
+}
+.Johannesburg {
+  background-image: url(./img/joha.jpg);
+  background-size: cover;
+}
+.Accra {
+  background-image: url(./img/accro.jpg);
+  background-size: cover;
+}
+.Lagos {
+  background-image: url(./img/lagos.jpg);
+  background-size: cover;
+}
+.Lille {
+  background-image: url(./img/lille.jpg);
+  background-size: cover;
+}
+.Kigali {
+  background-image: url(./img/kagari.webp);
+  background-size: cover;
+}
+
+.Rabat {
+  background-image: url(./img/rabat.jpg);
+  background-size: cover;
+}
