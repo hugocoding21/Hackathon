@@ -96,7 +96,7 @@ console.log(meteoData)
       {selectedHouse && showModal && (
         <div className="modal" onClick={closeModal}>
           <div className="modal-content">
-            <h2 className="">Book your house in {chosenCity}, currently temperature : {meteoData.current.temp_c}°C</h2>
+            <h2 className="">Book your house in {chosenCity}, current temperature : {meteoData.current.temp_c}°C</h2>
       
             <p className="home_description">{selectedHouse.description}</p>
             <div className="images_slide">
