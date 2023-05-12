@@ -20,7 +20,7 @@ const Navbar = () => {
           </NavLink>
         </li>
         <li className="navBtn">
-          <NavLink to="/account" className="linkBtn">
+          <NavLink to="/user" className="linkBtn">
             Account
           </NavLink>
         </li>
