@@ -4,7 +4,12 @@ import "./Form.css";
 import Navbar from "../Navbar/Navbar";
 import ReactModal from "react-modal";
 
+
+
 const Form = () => {
+
+  const [meteoData, setMeteoData] = useState([])
+
   const location = useLocation();
   const chosenCity = location?.state?.chosenCity;
   const selectedHouse = location?.state?.selectedHouse;
@@ -71,7 +76,11 @@ const Form = () => {
     );
   };
 
-  return (
+
+
+
+
+return (
     <div>
       <Navbar />
       <div className="all-form">
